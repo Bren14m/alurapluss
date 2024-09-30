@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <title>Leituras Encantadas</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background-color: #f9c2b2;
+            color: #333;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            max-width: 1200px;
+            width: 100%;
+            padding: 20px;
+            text-align: center;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+        }
+
+        .container__titulo {
+            font-family: 'Dancing Script', cursive;
+            font-size: 3rem;
+            color: #e29578;
+            margin-bottom: 20px;
+        }
+
+        .container__slogan {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+    
+
+.container__imagem {
+    width: 100%;
+    max-width: 900px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container__botao {
+    background-color: #e29578;
+    color: #fff;
+    padding: 20px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background 0.3s;
+    display: block; /* Ocupa a linha inteira para aparecer abaixo da imagem */
+    margin: 20px auto 0 auto; /* Centraliza o botão e dá espaçamento acima dele */
+    max-width: 200px; /* Define uma largura máxima para o botão */
+}
+        .container__botao:hover {
+            background-color: #d17b60;
+        }
+
+        .secao__titulo {
+            font-family: 'Dancing Script', cursive;
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            color: #e29578;
+        }
+
+        .plano {
+    background-color: #e5d0f2; /* Altere aqui para a cor que você escolher */
+    padding: 40px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+
+        .plano:hover {
+            transform: translateY(-5px);
+        }
+
+        .plano h3 {
+            font-size: 1.8rem;
+            color: #e29578;
+            margin-bottom: 10px;
+        }
+
+        .plano p {
+            font-size: 1.1rem;
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .plano__botao {
+            background-color: #e29578;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1rem;
+            text-decoration: none;
+            display: inline-block;
+            transition: background 0.3s;
+        }
+
+        .plano__botao:hover {
+            background-color: #d17b60;
+        }
+
+        .livro__detalhe {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #e5d0f2;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .livro__imagem {
+            width: 100%;
+            max-width: 300px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+        }
+
+        .livro__info h3 {
+            font-size: 1.8rem;
+            color: #e29578;
+            margin-bottom: 10px;
+        }
+
+        .livro__sinopse {
+            font-size: 1.1rem;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .livro__votar {
+            background-color: #e29578;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1rem;
+            text-decoration: none;
+        }
+
+        .livro__votar:hover {
+            background-color: #d17b60;
+        }
+
+        .rodape {
+            background-color: #f8f8f8;
+            padding: 20px;
+            text-align: center;
+            border-top: 1px solid #e5e5e5;
+            margin-top: 40px;
+        }
+
+        .rodape__logo {
+            max-width: 150px;
+            margin-bottom: 20px;
+        }
+
+        .rodape__lista {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 20px;
+        }
+
+        .rodape__lista li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        .rodape__lista a {
+            text-decoration: none;
+            color: #555;
+        }
+
+        .rodape__texto {
+            font-size: 0.9rem;
+            color: #777;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Seção Home -->
+    <section class="home container">
+        <div class="container__caixa">
+            <h1 class="container__titulo">Leituras Encantadas</h1>
+            <p class="container__slogan">𝘿𝙚𝙨𝙘𝙪𝙗𝙧𝙖 𝙣𝙤𝙫𝙖𝙨 𝙝𝙞𝙨𝙩ó𝙧𝙞𝙖𝙨, 𝙘𝙤𝙣𝙚𝙘𝙩𝙚-𝙨𝙚 𝙘𝙤𝙢 𝙡𝙚𝙞𝙩𝙤𝙧𝙚𝙨 𝙚 𝙩𝙧𝙖𝙣𝙨𝙛𝙤𝙧𝙢𝙚 𝙨𝙪𝙖𝙨 𝙡𝙚𝙞𝙩𝙪𝙧𝙖𝙨 𝙚𝙢 𝙚𝙭𝙥𝙚𝙧𝙞ê𝙣𝙘𝙞𝙖𝙨 𝙢á𝙜𝙞𝙘𝙖𝙨.</p>
+            <img src="img/file-d3aqRFMeaprbXxzwH7HJptWb.png" alt="Leitores em ambiente aconchegante" class="container__imagem">
+            <a href="#assinaturas" class="container__botao">Junte-se ao Clube</a>
+        </div>
+    </section>
+
+    <!-- Seção Assinaturas -->
+    <section id="assinaturas" class="container">
+        <h2 class="secao__titulo">Escolha seu Plano</h2>
+        <div class="plano">
+            <h3>Plano Mensal</h3>
+            <p>Receba um livro e conteúdo exclusivo todo mês.</p>
+            <a href="#" class="plano__botao">Assinar por R$ 29,90/mês</a>
+        </div>
+        <div class="plano">
+            <h3>Plano Trimestral</h3>
+            <p>Três livros a cada três meses, com desconto.</p>
+            <a href="#" class="plano__botao">Assinar por R$ 79,90/trimestre</a>
+        </div>
+        <div class="plano">
+            <h3>Plano Anual</h3>
+            <p>Doze livros por um preço especial, incluindo um presente de boas-vindas.</p>
+            <a href="#" class="plano__botao">Assinar por R$ 299,90/ano</a>
+        </div>
+    </section>
+
+    <!-- Seção Livros do Mês -->
+<section id="livros" class="container">
+    <h2 class="secao__titulo">Livro do Mês</h2>
+    <div class="livro__detalhe">
+        <img src="img/O Pequeno Príncipe Antoine de Saint-Exupéry Editorial IBC.png" alt="Capa do livro O Pequeno Príncipe" class="livro__imagem" style="width: 100%; max-width: 300px; margin: auto; display: block;">
+        <div class="livro__info">
+            <h3>O Pequeno Príncipe</h3>
+            <p class="livro__sinopse"><strong>Sinopse:</strong> "O Pequeno Príncipe" é uma obra clássica escrita por Antoine de Saint-Exupéry. O livro conta a história de um piloto que, após um acidente no deserto do Saara, encontra um pequeno príncipe que vem de um asteroide. Juntos, eles compartilham experiências e reflexões sobre a vida, a amizade e o amor. A narrativa é rica em lições profundas e poéticas, abordando temas como a solidão, a busca por significado e a importância de ver com o coração.</p>
+            <a href="#" class="livro__votar">Vote para os próximos livros</a>
+        </div>
+    </div>
+</section>
